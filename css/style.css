@@ -211,10 +211,30 @@ a {
   margin-top: -150px; }
 
 /* Navbar */
+
+#header-border {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  left: 10%;
+  height: 1px;
+  width: 80%;
+  border-bottom: 1px solid black;
+  padding-top: 1em;
+}
+
+h1 {
+  padding-left: .5em;
+  width: 275px;
+}
+
 .site-navbar {
   margin-bottom: 0px;
   z-index: 9;
-  position: relative; }
+  position: relative; 
+  }
+  
   .site-navbar.transparent {
     background: transparent; }
   .site-navbar.absolute {
@@ -229,14 +249,18 @@ a {
     margin-top: -20px; }
   .site-navbar .site-navigation.border-bottom {
     border-bottom: 1px solid #f3f3f4 !important; }
-  .site-navbar .site-navigation .site-menu {
-    margin-bottom: 0; }
+  
+
+
+    .site-navbar .site-navigation .site-menu {  
+      margin-top: 0;      
+    }
     .site-navbar .site-navigation .site-menu .active > a {
       color: #20c997; }
     .site-navbar .site-navigation .site-menu a {
       text-decoration: none !important;
       font-size: 15px;
-      display: inline-block; }
+      display: inline-block;}
     .site-navbar .site-navigation .site-menu > li {
       display: inline-block;
       padding: 10px 5px; }
@@ -246,7 +270,7 @@ a {
         letter-spacing: .1em;
         color: #000;
         font-size: 12px;
-        text-decoration: none !important; }
+        text-decoration: none !important;  }
         .site-navbar .site-navigation .site-menu > li > a:hover {
           color: #20c997; }
     .site-navbar .site-navigation .site-menu .has-children {
@@ -349,7 +373,7 @@ a {
     color: #20c997; }
 
 .site-mobile-menu {
-  width: 300px;
+  width: 200px;
   position: fixed;
   right: 0;
   z-index: 2000;
@@ -1079,7 +1103,8 @@ a {
   transform: scale(1.2); }
 
 .swiper-container {
-  height: calc(100vh - 192px); }
+  height: calc(100vh - 192px); 
+  padding-top: 1em;}
   .swiper-container .swiper-slide .image-wrap {
     display: block;
     overflow: hidden;
@@ -1120,7 +1145,7 @@ a {
     .swiper-container .swiper-slide .image-wrap:hover:before {
       background: rgba(0, 0, 0, 0.4);
       content: ""; }
-  .swiper-container .btn-outline-white {
+  /*.swiper-container .btn-outline-white {
     border-color: #fff;
     color: #fff;
     border-width: 2px;
@@ -1162,7 +1187,7 @@ a {
 
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #20c997; }
+  background: #20c997; }*/
 
 #lightgallery .item {
   margin-bottom: 30px; }
