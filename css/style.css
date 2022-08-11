@@ -212,7 +212,23 @@ a {
 
 /* Navbar */
 
-#header-border {
+#header-border-home {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  left: 5%;
+  height: 1px;
+  width: 90%;
+  border-top: 1px solid black;
+  padding-bottom: 1.5em;
+}
+
+@media (min-width: 1200px) {
+  #header-border-home {
+    margin-top: -1em; } }
+
+#header-border-photos {
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -221,7 +237,13 @@ a {
   height: 1px;
   width: 90%;
   border-bottom: 1px solid black;
-  padding-top: 1em;
+}
+@media (min-width: 1200px) {
+  #header-border-photos {
+    margin-top: -1em; } }
+
+#desktop-nav {
+  padding-top: 2em;
 }
 
 h1 {
@@ -269,10 +291,10 @@ h1 {
       padding: 10px 5px; }
       .site-navbar .site-navigation .site-menu > li > a {
         padding: 10px 10px;
-        text-transform: uppercase;
+        text-transform: lowercase;
         letter-spacing: .1em;
         color: #000;
-        font-size: 12px;
+        font-size: 15px;
         text-decoration: none !important;  }
         .site-navbar .site-navigation .site-menu > li > a:hover {
           color: #20c997; }
@@ -357,7 +379,7 @@ h1 {
             background: #f4f5f9;
             color: #25262a; }
       .site-navbar .site-navigation .site-menu .has-children a {
-        text-transform: uppercase; }
+        text-transform: lowercase; }
       .site-navbar .site-navigation .site-menu .has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children:focus > a, .site-navbar .site-navigation .site-menu .has-children:active > a {
         color: #20c997; }
       .site-navbar .site-navigation .site-menu .has-children:hover, .site-navbar .site-navigation .site-menu .has-children:focus, .site-navbar .site-navigation .site-menu .has-children:active {
